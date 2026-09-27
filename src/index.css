@@ -7,7 +7,7 @@
       PRIMATIVE TOKENS
       ====================  */
 
-  /* neutral */
+  /* neutral color tokens */
   --neutral-0: #ffffff;
   --neutral-50: #f9fafb;
   --neutral-100: #f2f3f5;
@@ -22,7 +22,7 @@
   --neutral-950: #0a0b0c;
   --neutral-1000: #000000;
 
-  /* blue */
+  /* blue color tokens */
   --blue-50: #eff6ff;
   --blue-100: #e0ecfe;
   --blue-200: #c3d9fd;
@@ -35,35 +35,64 @@
   --blue-900: #0b1f5b;
   --blue-950: #08143a;
 
-  /* green */
+  /* green color tokens */
   --green-50: #defbe6;
   --green-200: #a7f0ba;
   --green-500: #24a148;
   --green-700: #0e6027;
   --green-900: #022d0d;
 
-  /* yellow */
+  /* yellow color tokens */
   --yellow-50: #fcf4d6;
   --yellow-200: #fddc69;
   --yellow-500: #f1c21b;
   --yellow-700: #684e00;
   --yellow-900: #302400;
 
-  /* red */
+  /* red color tokens */
   --red-50: #fff1f1;
   --red-200: #ffd7d9;
   --red-500: #da1e28;
   --red-700: #a2191f;
   --red-900: #520408;
 
-  /* alpha */
+  /* alpha color tokens */
   --alpha-black-20: color-mix (var(--neutral-1000) 20%, transparent 80%);
+
+  /* spacing tokens */
+  --spacing-0: 0px;
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+
+  /* border thickness tokens */
+  --border-thickness-1: 1px;
+  --border-thickness-2: 2px;
+
+  /* border radius tokens */
+  --border-radius-2: 2px;
+  --border-radius-4: 4px;
+  --border-radius-8: 8px;
+  --border-radius-12: 12px;
+  --border-radius-16: 16px;
+  --border-radius-24: 24px;
+  --border-radius-circle: 9999px;
 
   /*  ====================
       SEMANTIC TOKENS
       ====================  */
 
-  /* surface / background */
+  /* surface / background color tokens */
   --surface-base: var(--neutral-50);
   --surface-raised: var(--neutral-0);
   --surface-sunken-light: var(--neutral-100);
@@ -71,7 +100,7 @@
   --surface-brand: var(--blue-600);
   --surface-inverse-base: var(--neutral-900);
 
-  /* text */
+  /* text color tokens */
   --text-primary: var(--neutral-950);
   --text-secondary: var(--neutral-700);
   --text-tertiary: var(--neutral-600);
@@ -79,10 +108,10 @@
   --text-inverse-primary: var(--neutral-0);
   --text-inverse-secondary: var(--neutral-200);
 
-  /* border */
+  /* border color tokens */
   --border-subtle: var(--alpha-black-20);
 
-  /* status */
+  /* status color tokens */
   --status-success-text: var(--green-700);
   --status-success-background-primary: var(--green-500);
   --status-success-background-light: var(--green-200);
@@ -99,10 +128,10 @@
       COMPONENT TOKENS
       ====================  */
 
-  /* cursor-highlight */
+  /* cursor-highlight color tokens */
   --highlight: var(--blue-600);
 
-  /* scrollbar */
+  /* scrollbar color tokens */
   --scrollbar: var(--neutral-500);
 
   color: #111;
