@@ -80,12 +80,14 @@
   --border-thickness-2: 2px;
 
   /* border radius tokens */
+  --border-radius-0: 0px;
   --border-radius-2: 2px;
   --border-radius-4: 4px;
   --border-radius-8: 8px;
   --border-radius-12: 12px;
   --border-radius-16: 16px;
   --border-radius-24: 24px;
+  --border-radius-32: 32px;
   --border-radius-circle: 9999px;
 
   /*  ====================
