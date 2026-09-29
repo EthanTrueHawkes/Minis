@@ -1,10 +1,6 @@
 :root {
-  font-family: system-ui, sans-serif;
-
-  /* color tokens */
-
   /*  ====================
-      PRIMATIVE TOKENS
+      COLOR PRIMITIVES
       ====================  */
 
   /* neutral color tokens */
@@ -57,7 +53,7 @@
   --red-900: #520408;
 
   /* alpha color tokens */
-  --alpha-black-20: color-mix (var(--neutral-1000) 20%, transparent 80%);
+  --alpha-black-20: color-mix(var(--neutral-1000) 20%, transparent 80%);
 
   /* spacing tokens */
   --spacing-0: 0px;
@@ -80,66 +76,230 @@
   --border-thickness-2: 2px;
 
   /* border radius tokens */
-  --border-radius-0: 0px;
-  --border-radius-2: 2px;
-  --border-radius-4: 4px;
-  --border-radius-8: 8px;
-  --border-radius-12: 12px;
-  --border-radius-16: 16px;
-  --border-radius-24: 24px;
-  --border-radius-32: 32px;
-  --border-radius-circle: 9999px;
+  --radius-0: 0px;
+  --radius-2: 2px;
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-24: 24px;
+  --radius-32: 32px;
+  --radius-circle: 9999px;
 
   /*  ====================
-      SEMANTIC TOKENS
+      COLOR SEMANTICS
       ====================  */
 
   /* surface / background color tokens */
-  --surface-base: var(--neutral-50);
-  --surface-raised: var(--neutral-0);
-  --surface-sunken-light: var(--neutral-100);
-  --surface-sunken-medium: var(--neutral-200);
-  --surface-brand: var(--blue-600);
-  --surface-inverse-base: var(--neutral-900);
+  --color-surface-base: var(--neutral-50);
+  --color-surface-raised: var(--neutral-0);
+  --color-surface-sunken-light: var(--neutral-100);
+  --color-surface-sunken-medium: var(--neutral-200);
+  --color-surface-brand: var(--blue-600);
+  --color-surface-inverse-base: var(--neutral-900);
 
   /* text color tokens */
-  --text-primary: var(--neutral-950);
-  --text-secondary: var(--neutral-700);
-  --text-tertiary: var(--neutral-600);
-  --text-brand: var(--blue-600);
-  --text-inverse-primary: var(--neutral-0);
-  --text-inverse-secondary: var(--neutral-200);
+  --color-text-primary: var(--neutral-950);
+  --color-text-secondary: var(--neutral-700);
+  --color-text-tertiary: var(--neutral-600);
+  --color-text-brand: var(--blue-600);
+  --color-text-inverse-primary: var(--neutral-0);
+  --color-text-inverse-secondary: var(--neutral-200);
 
   /* border color tokens */
-  --border-subtle: var(--alpha-black-20);
+  --color-border-subtle: var(--alpha-black-20);
 
   /* status color tokens */
-  --status-success-text: var(--green-700);
-  --status-success-background-primary: var(--green-500);
-  --status-success-background-light: var(--green-200);
+  --color-status-success-text: var(--green-700);
+  --color-status-success-background-primary: var(--green-500);
+  --color-status-success-background-light: var(--green-200);
 
-  --status-warning-text: var(--yellow-700);
-  --status-warning-background-primary: var(--yellow-500);
-  --status-warning-background-light: var(--yellow-200);
+  --color-status-warning-text: var(--yellow-700);
+  --color-status-warning-background-primary: var(--yellow-500);
+  --color-status-warning-background-light: var(--yellow-200);
 
-  --status-danger-text: var(--red-700);
-  --status-danger-background-primary: var(--red-500);
-  --status-danger-background-light: var(--red-200);
+  --color-status-danger-text: var(--red-700);
+  --color-status-danger-background-primary: var(--red-500);
+  --color-status-danger-background-light: var(--red-200);
 
   /*  ====================
-      COMPONENT TOKENS
+      COLOR COMPONENT TOKENS
       ====================  */
-
   /* cursor-highlight color tokens */
-  --highlight: var(--blue-600);
+  --highlight-color: var(--blue-600);
 
   /* scrollbar color tokens */
-  --scrollbar: var(--neutral-500);
+  --scrollbar-color: var(--neutral-500);
 
-  color: #111;
-  background: var(--surface-inverse-base);
+  /*  ====================
+      TYPOGRAPHY PRIMITIVES
+      ====================  */
+
+  /* font family */
+  --font-family-sans: "Inter", sans-serif;
+
+  /* font size */
+  --font-size-12: 0.75rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-size-32: 2rem;
+  --font-size-40: 2.5rem;
+
+  /* font weight */
+  --font-weight-light: 300;
+  --font-weight-default: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* line height */
+  --font-line-height-16: 1rem;
+  --font-line-height-20: 1.25rem;
+  --font-line-height-24: 1.5rem;
+  --font-line-height-28: 1.75rem;
+  --font-line-height-32: 2rem;
+  --font-line-height-40: 2.5rem;
+  --font-line-height-48: 3rem;
+
+  /* Letter spacing */
+  --font-letter-spacing-normal: 0;
+  --font-letter-spacing-tight: -0.01em;
+
+  /*  ====================
+      TYPOGRAPHY SEMANTICS
+      ====================  */
+
+  /* body size */
+  --text-body-sm-size: var(--font-size-14);
+  --text-body-sm-line-height: var(--font-line-height-20);
+
+  --text-body-size: var(--font-size-16);
+  --text-body-line-height: var(--font-line-height-24);
+
+  --text-body-lg-size: var(--font-size-18);
+  --text-body-lg-line-height: var(--font-line-height-28);
+
+  /* body weight */
+  --text-body-weight-light: var(--font-weight-light);
+  --text-body-weight-default: var(--font-weight-default);
+  --text-body-weight-bold: var(--font-weight-semibold);
+
+  /* label size */
+  --text-label-sm-size: var(--font-size-12);
+  --text-label-sm-line-height: var(--font-line-height-16);
+
+  --text-label-size: var(--font-size-14);
+  --text-label-line-height: var(--font-line-height-20);
+
+  /* label weight */
+  --text-label-weight-default: var(--font-weight-medium);
+  --text-label-weight-bold: var(--font-weight-semibold);
+
+  /* header & display size */
+  --text-header-sm-size: var(--font-size-18);
+  --text-header-sm-line-height: var(--font-line-height-24);
+
+  --text-header-md-size: var(--font-size-24);
+  --text-header-md-line-height: var(--font-line-height-32);
+
+  --text-header-lg-size: var(--font-size-32);
+  --text-header-lg-line-height: var(--font-line-height-40);
+
+  --text-display-size: var(--font-size-40);
+  --text-display-line-height: var(--font-line-height-48);
+
+  /* header & display weight */
+  --text-header-weight-default: var(--font-weight-semibold);
+  --text-display-weight-default: var(--font-weight-semibold);
+
+  /*  ====================
+      GENERAL LAYOUT
+      ====================  */
+  font-family: var(--font-family-sans);
+  color: var(--color-text-primary);
+  background: var(--color-surface-inverse-base);
 }
 
 body {
   margin: 0 80px;
+}
+
+.text-body-sm {
+  font-size: var(--text-body-sm-size);
+  font-weight: var(--text-body-weight-default);
+  line-height: var(--text-body-sm-line-height);
+}
+
+.text-body {
+  font-size: var(--text-body-size);
+  font-weight: var(--text-body-weight-default);
+  line-height: var(--text-body-line-height);
+}
+
+.text-body-lg {
+  font-size: var(--text-body-lg-size);
+  font-weight: var(--text-body-weight-default);
+  line-height: var(--text-body-lg-line-height);
+}
+
+.text-label-sm {
+  font-size: var(--text-label-sm-size);
+  font-weight: var(--text-body-weight-default);
+  line-height: var(--text-label-sm-line-height);
+}
+
+.text-label {
+  font-size: var(--text-label-size);
+  font-weight: var(--text-body-weight-default);
+  line-height: var(--text-label-line-height);
+}
+
+.text-header-sm {
+  font-size: var(--text-header-sm-size);
+  font-weight: var(--text-body-weight-default);
+  line-height: var(--text-header-sm-line-height);
+}
+
+.text-header-md {
+  font-size: var(--text-header-md-size);
+  font-weight: var(--text-body-weight-default);
+  line-height: var(--text-header-md-line-height);
+}
+
+.text-header-lg {
+  font-size: var(--text-header-lg-size);
+  font-weight: var(--text-body-weight-default);
+  line-height: var(--text-header-lg-line-height);
+}
+
+.text-display {
+  font-size: var(--text-display-size);
+  font-weight: var(--text-body-weight-default);
+  line-height: var(--text-display-line-height);
+}
+
+.text-weight-body-default {
+  font-weight: var(--text-body-weight-default);
+}
+
+.text-weight-body-bold {
+  font-weight: var(--text-body-weight-bold);
+}
+
+.text-weight-label-default {
+  font-weight: var(--text-label-weight-default);
+}
+
+.text-weight-label-bold {
+  font-weight: var(--text-label-weight-bold);
+}
+
+.text-weight-header-default {
+  font-weight: var(--text-header-weight-default);
+}
+
+.text-weight-display-default {
+  font-weight: var(--text-display-weight-default);
 }

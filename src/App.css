@@ -1,5 +1,5 @@
 .card {
-  background: var(--surface-raised);
+  background: var(--color-surface-raised);
   padding: 16px;
   border-radius: 24px;
 }
@@ -23,7 +23,7 @@
   align-items: center;
 
   padding: 24px 48px;
-  background: var(--surface-sunken-light);
+  background: var(--color-surface-sunken-light);
   border-radius: 12px;
 
   .text_wrapper_upload {
