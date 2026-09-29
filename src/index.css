@@ -1,219 +1,8 @@
+@import "./tokens/colors.css";
+@import "./tokens/typography.css";
+@import "./tokens/other.css";
+
 :root {
-  /*  ====================
-      COLOR PRIMITIVES
-      ====================  */
-
-  /* neutral color tokens */
-  --neutral-0: #ffffff;
-  --neutral-50: #f9fafb;
-  --neutral-100: #f2f3f5;
-  --neutral-200: #e4e6ea;
-  --neutral-300: #ced1d6;
-  --neutral-400: #aeb1b7;
-  --neutral-500: #898c93;
-  --neutral-600: #66696f;
-  --neutral-700: #45484d;
-  --neutral-800: #2c2e32;
-  --neutral-900: #191b1d;
-  --neutral-950: #0a0b0c;
-  --neutral-1000: #000000;
-
-  /* blue color tokens */
-  --blue-50: #eff6ff;
-  --blue-100: #e0ecfe;
-  --blue-200: #c3d9fd;
-  --blue-300: #9bbffb;
-  --blue-400: #6a9cfb;
-  --blue-500: #3577f8;
-  --blue-600: #155adf;
-  --blue-700: #0f42b5;
-  --blue-800: #0d2f89;
-  --blue-900: #0b1f5b;
-  --blue-950: #08143a;
-
-  /* green color tokens */
-  --green-50: #defbe6;
-  --green-200: #a7f0ba;
-  --green-500: #24a148;
-  --green-700: #0e6027;
-  --green-900: #022d0d;
-
-  /* yellow color tokens */
-  --yellow-50: #fcf4d6;
-  --yellow-200: #fddc69;
-  --yellow-500: #f1c21b;
-  --yellow-700: #684e00;
-  --yellow-900: #302400;
-
-  /* red color tokens */
-  --red-50: #fff1f1;
-  --red-200: #ffd7d9;
-  --red-500: #da1e28;
-  --red-700: #a2191f;
-  --red-900: #520408;
-
-  /* alpha color tokens */
-  --alpha-black-20: color-mix(var(--neutral-1000) 20%, transparent 80%);
-
-  /* spacing tokens */
-  --spacing-0: 0px;
-  --spacing-2: 2px;
-  --spacing-4: 4px;
-  --spacing-6: 6px;
-  --spacing-8: 8px;
-  --spacing-12: 12px;
-  --spacing-16: 16px;
-  --spacing-20: 20px;
-  --spacing-24: 24px;
-  --spacing-32: 32px;
-  --spacing-40: 40px;
-  --spacing-48: 48px;
-  --spacing-64: 64px;
-  --spacing-80: 80px;
-
-  /* border thickness tokens */
-  --border-thickness-1: 1px;
-  --border-thickness-2: 2px;
-
-  /* border radius tokens */
-  --radius-0: 0px;
-  --radius-2: 2px;
-  --radius-4: 4px;
-  --radius-8: 8px;
-  --radius-12: 12px;
-  --radius-16: 16px;
-  --radius-24: 24px;
-  --radius-32: 32px;
-  --radius-circle: 9999px;
-
-  /*  ====================
-      COLOR SEMANTICS
-      ====================  */
-
-  /* surface / background color tokens */
-  --color-surface-base: var(--neutral-50);
-  --color-surface-raised: var(--neutral-0);
-  --color-surface-sunken-light: var(--neutral-100);
-  --color-surface-sunken-medium: var(--neutral-200);
-  --color-surface-brand: var(--blue-600);
-  --color-surface-inverse-base: var(--neutral-900);
-
-  /* text color tokens */
-  --color-text-primary: var(--neutral-950);
-  --color-text-secondary: var(--neutral-700);
-  --color-text-tertiary: var(--neutral-600);
-  --color-text-brand: var(--blue-600);
-  --color-text-inverse-primary: var(--neutral-0);
-  --color-text-inverse-secondary: var(--neutral-200);
-
-  /* border color tokens */
-  --color-border-subtle: var(--alpha-black-20);
-
-  /* status color tokens */
-  --color-status-success-text: var(--green-700);
-  --color-status-success-background-primary: var(--green-500);
-  --color-status-success-background-light: var(--green-200);
-
-  --color-status-warning-text: var(--yellow-700);
-  --color-status-warning-background-primary: var(--yellow-500);
-  --color-status-warning-background-light: var(--yellow-200);
-
-  --color-status-danger-text: var(--red-700);
-  --color-status-danger-background-primary: var(--red-500);
-  --color-status-danger-background-light: var(--red-200);
-
-  /*  ====================
-      COLOR COMPONENT TOKENS
-      ====================  */
-  /* cursor-highlight color tokens */
-  --highlight-color: var(--blue-600);
-
-  /* scrollbar color tokens */
-  --scrollbar-color: var(--neutral-500);
-
-  /*  ====================
-      TYPOGRAPHY PRIMITIVES
-      ====================  */
-
-  /* font family */
-  --font-family-sans: "Inter", sans-serif;
-
-  /* font size */
-  --font-size-12: 0.75rem;
-  --font-size-14: 0.875rem;
-  --font-size-16: 1rem;
-  --font-size-18: 1.125rem;
-  --font-size-20: 1.25rem;
-  --font-size-24: 1.5rem;
-  --font-size-32: 2rem;
-  --font-size-40: 2.5rem;
-
-  /* font weight */
-  --font-weight-light: 300;
-  --font-weight-default: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-
-  /* line height */
-  --font-line-height-16: 1rem;
-  --font-line-height-20: 1.25rem;
-  --font-line-height-24: 1.5rem;
-  --font-line-height-28: 1.75rem;
-  --font-line-height-32: 2rem;
-  --font-line-height-40: 2.5rem;
-  --font-line-height-48: 3rem;
-
-  /* Letter spacing */
-  --font-letter-spacing-normal: 0;
-  --font-letter-spacing-tight: -0.01em;
-
-  /*  ====================
-      TYPOGRAPHY SEMANTICS
-      ====================  */
-
-  /* body size */
-  --text-body-sm-size: var(--font-size-14);
-  --text-body-sm-line-height: var(--font-line-height-20);
-
-  --text-body-size: var(--font-size-16);
-  --text-body-line-height: var(--font-line-height-24);
-
-  --text-body-lg-size: var(--font-size-18);
-  --text-body-lg-line-height: var(--font-line-height-28);
-
-  /* body weight */
-  --text-body-weight-light: var(--font-weight-light);
-  --text-body-weight-default: var(--font-weight-default);
-  --text-body-weight-bold: var(--font-weight-semibold);
-
-  /* label size */
-  --text-label-sm-size: var(--font-size-12);
-  --text-label-sm-line-height: var(--font-line-height-16);
-
-  --text-label-size: var(--font-size-14);
-  --text-label-line-height: var(--font-line-height-20);
-
-  /* label weight */
-  --text-label-weight-default: var(--font-weight-medium);
-  --text-label-weight-bold: var(--font-weight-semibold);
-
-  /* header & display size */
-  --text-header-sm-size: var(--font-size-18);
-  --text-header-sm-line-height: var(--font-line-height-24);
-
-  --text-header-md-size: var(--font-size-24);
-  --text-header-md-line-height: var(--font-line-height-32);
-
-  --text-header-lg-size: var(--font-size-32);
-  --text-header-lg-line-height: var(--font-line-height-40);
-
-  --text-display-size: var(--font-size-40);
-  --text-display-line-height: var(--font-line-height-48);
-
-  /* header & display weight */
-  --text-header-weight-default: var(--font-weight-semibold);
-  --text-display-weight-default: var(--font-weight-semibold);
-
   /*  ====================
       GENERAL LAYOUT
       ====================  */
@@ -256,22 +45,22 @@ body {
   line-height: var(--text-label-line-height);
 }
 
-.text-header-sm {
-  font-size: var(--text-header-sm-size);
+.text-heading-sm {
+  font-size: var(--text-heading-sm-size);
   font-weight: var(--text-body-weight-default);
-  line-height: var(--text-header-sm-line-height);
+  line-height: var(--text-heading-sm-line-height);
 }
 
-.text-header-md {
-  font-size: var(--text-header-md-size);
+.text-heading-md {
+  font-size: var(--text-heading-md-size);
   font-weight: var(--text-body-weight-default);
-  line-height: var(--text-header-md-line-height);
+  line-height: var(--text-heading-md-line-height);
 }
 
-.text-header-lg {
-  font-size: var(--text-header-lg-size);
+.text-heading-lg {
+  font-size: var(--text-heading-lg-size);
   font-weight: var(--text-body-weight-default);
-  line-height: var(--text-header-lg-line-height);
+  line-height: var(--text-heading-lg-line-height);
 }
 
 .text-display {
@@ -296,8 +85,8 @@ body {
   font-weight: var(--text-label-weight-bold);
 }
 
-.text-weight-header-default {
-  font-weight: var(--text-header-weight-default);
+.text-weight-heading-default {
+  font-weight: var(--text-heading-weight-default);
 }
 
 .text-weight-display-default {

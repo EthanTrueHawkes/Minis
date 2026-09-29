@@ -1,0 +1,84 @@
+:root {
+  /*  ====================
+      TYPOGRAPHY PRIMITIVES
+      ====================  */
+
+  /* font family */
+  --font-family-sans: "Inter", sans-serif;
+
+  /* font size */
+  --font-size-12: 0.75rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-size-32: 2rem;
+  --font-size-40: 2.5rem;
+
+  /* font weight */
+  --font-weight-light: 300;
+  --font-weight-default: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* line height */
+  --font-line-height-16: 1rem;
+  --font-line-height-20: 1.25rem;
+  --font-line-height-24: 1.5rem;
+  --font-line-height-28: 1.75rem;
+  --font-line-height-32: 2rem;
+  --font-line-height-40: 2.5rem;
+  --font-line-height-48: 3rem;
+
+  /* Letter spacing */
+  --font-letter-spacing-normal: 0;
+  --font-letter-spacing-tight: -0.01em;
+
+  /*  ====================
+      TYPOGRAPHY SEMANTICS
+      ====================  */
+
+  /* body size */
+  --text-body-sm-size: var(--font-size-14);
+  --text-body-sm-line-height: var(--font-line-height-20);
+
+  --text-body-size: var(--font-size-16);
+  --text-body-line-height: var(--font-line-height-24);
+
+  --text-body-lg-size: var(--font-size-18);
+  --text-body-lg-line-height: var(--font-line-height-28);
+
+  /* body weight */
+  --text-body-weight-light: var(--font-weight-light);
+  --text-body-weight-default: var(--font-weight-default);
+  --text-body-weight-bold: var(--font-weight-semibold);
+
+  /* label size */
+  --text-label-sm-size: var(--font-size-12);
+  --text-label-sm-line-height: var(--font-line-height-16);
+
+  --text-label-size: var(--font-size-14);
+  --text-label-line-height: var(--font-line-height-20);
+
+  /* label weight */
+  --text-label-weight-default: var(--font-weight-medium);
+  --text-label-weight-bold: var(--font-weight-semibold);
+
+  /* header & display size */
+  --text-heading-sm-size: var(--font-size-18);
+  --text-heading-sm-line-height: var(--font-line-height-24);
+
+  --text-heading-md-size: var(--font-size-24);
+  --text-heading-md-line-height: var(--font-line-height-32);
+
+  --text-heading-lg-size: var(--font-size-32);
+  --text-heading-lg-line-height: var(--font-line-height-40);
+
+  --text-display-size: var(--font-size-40);
+  --text-display-line-height: var(--font-line-height-48);
+
+  /* header & display weight */
+  --text-heading-weight-default: var(--font-weight-semibold);
+  --text-display-weight-default: var(--font-weight-semibold);
+}

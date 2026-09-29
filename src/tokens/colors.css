@@ -1,0 +1,103 @@
+:root {
+  /*  ====================
+      COLOR PRIMITIVES
+      ====================  */
+
+  /* neutral color tokens */
+  --neutral-0: #ffffff;
+  --neutral-50: #f9fafb;
+  --neutral-100: #f2f3f5;
+  --neutral-200: #e4e6ea;
+  --neutral-300: #ced1d6;
+  --neutral-400: #aeb1b7;
+  --neutral-500: #898c93;
+  --neutral-600: #66696f;
+  --neutral-700: #45484d;
+  --neutral-800: #2c2e32;
+  --neutral-900: #191b1d;
+  --neutral-950: #0a0b0c;
+  --neutral-1000: #000000;
+
+  /* blue color tokens */
+  --blue-50: #eff6ff;
+  --blue-100: #e0ecfe;
+  --blue-200: #c3d9fd;
+  --blue-300: #9bbffb;
+  --blue-400: #6a9cfb;
+  --blue-500: #3577f8;
+  --blue-600: #155adf;
+  --blue-700: #0f42b5;
+  --blue-800: #0d2f89;
+  --blue-900: #0b1f5b;
+  --blue-950: #08143a;
+
+  /* green color tokens */
+  --green-50: #defbe6;
+  --green-200: #a7f0ba;
+  --green-500: #24a148;
+  --green-700: #0e6027;
+  --green-900: #022d0d;
+
+  /* yellow color tokens */
+  --yellow-50: #fcf4d6;
+  --yellow-200: #fddc69;
+  --yellow-500: #f1c21b;
+  --yellow-700: #684e00;
+  --yellow-900: #302400;
+
+  /* red color tokens */
+  --red-50: #fff1f1;
+  --red-200: #ffd7d9;
+  --red-500: #da1e28;
+  --red-700: #a2191f;
+  --red-900: #520408;
+
+  /* alpha color tokens */
+  --alpha-black-20: color-mix(var(--neutral-1000) 20%, transparent 80%);
+
+  /*    ====================
+        COLOR SEMANTICS
+        ====================  */
+
+  /* surface / background color tokens */
+  --color-surface-base: var(--neutral-50);
+  --color-surface-raised: var(--neutral-0);
+  --color-surface-sunken-light: var(--neutral-100);
+  --color-surface-sunken-medium: var(--neutral-200);
+  --color-surface-brand: var(--blue-600);
+  --color-surface-inverse-base: var(--neutral-900);
+
+  /* text color tokens */
+  --color-text-primary: var(--neutral-950);
+  --color-text-secondary: var(--neutral-700);
+  --color-text-tertiary: var(--neutral-600);
+  --color-text-brand: var(--blue-600);
+  --color-text-inverse-primary: var(--neutral-0);
+  --color-text-inverse-secondary: var(--neutral-200);
+
+  /* border color tokens */
+  --color-border-subtle: var(--alpha-black-20);
+
+  /* status color tokens */
+  --color-status-success-text: var(--green-700);
+  --color-status-success-background-primary: var(--green-500);
+  --color-status-success-background-light: var(--green-200);
+
+  --color-status-warning-text: var(--yellow-700);
+  --color-status-warning-background-primary: var(--yellow-500);
+  --color-status-warning-background-light: var(--yellow-200);
+
+  --color-status-danger-text: var(--red-700);
+  --color-status-danger-background-primary: var(--red-500);
+  --color-status-danger-background-light: var(--red-200);
+
+  /*  ====================
+      COLOR COMPONENT TOKENS
+      ====================  */
+
+  /* cursor-highlight color tokens */
+  --highlight-color: var(--blue-600);
+
+  /* scrollbar color tokens */
+  --scrollbar-color: var(--neutral-500);
+}
